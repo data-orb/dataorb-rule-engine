@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.dataorb.dlms.rules</groupId>
+    <groupId>co.dataorb.java.rules</groupId>
     <artifactId>rule-engine</artifactId>
     <version>0.0.0</version>
     <packaging>jar</packaging>
@@ -25,7 +25,7 @@
     </licenses>
 
     <scm>
-        <url>lp:dhis2</url>
+        <url>lp:dataorb</url>
     </scm>
 
     <issueManagement>
@@ -275,7 +275,7 @@
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>org.dataorb.dlms.lib.expression</groupId>
+            <groupId>org.hisp.dhis.lib.expression</groupId>
             <artifactId>expression-parser</artifactId>
             <version>1.0.2</version>
         </dependency>

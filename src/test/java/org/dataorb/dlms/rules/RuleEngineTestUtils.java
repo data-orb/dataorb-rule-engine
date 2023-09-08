@@ -1,11 +1,11 @@
-package org.dataorb.dlms.rules;
+package co.dataorb.java.rules;
 
 
-import org.dataorb.dlms.rules.models.Rule;
-import org.dataorb.dlms.rules.models.RuleEnrollment;
-import org.dataorb.dlms.rules.models.RuleEvent;
-import org.dataorb.dlms.rules.models.RuleVariable;
-import org.dataorb.dlms.rules.models.TriggerEnvironment;
+import co.dataorb.java.rules.models.Rule;
+import co.dataorb.java.rules.models.RuleEnrollment;
+import co.dataorb.java.rules.models.RuleEvent;
+import co.dataorb.java.rules.models.RuleVariable;
+import co.dataorb.java.rules.models.TriggerEnvironment;
 
 import java.util.Arrays;
 import java.util.HashMap;

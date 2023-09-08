@@ -1,9 +1,9 @@
-package org.dataorb.dlms.rules;
+package co.dataorb.java.rules;
 
 import com.google.auto.value.AutoValue;
-import org.dataorb.dlms.lib.expression.spi.ValueType;
-import org.dataorb.dlms.lib.expression.spi.VariableValue;
-import org.dataorb.dlms.rules.models.RuleValueType;
+import org.hisp.dhis.lib.expression.spi.ValueType;
+import org.hisp.dhis.lib.expression.spi.VariableValue;
+import co.dataorb.java.rules.models.RuleValueType;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;

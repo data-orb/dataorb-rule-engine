@@ -1,18 +1,18 @@
-package org.dataorb.dlms.rules;
+package co.dataorb.java.rules;
 
-import org.dataorb.dlms.rules.models.RuleAttributeValue;
-import org.dataorb.dlms.rules.models.RuleDataValue;
-import org.dataorb.dlms.rules.models.RuleEnrollment;
-import org.dataorb.dlms.rules.models.RuleEvent;
-import org.dataorb.dlms.rules.models.RuleValueType;
-import org.dataorb.dlms.rules.models.RuleVariable;
-import org.dataorb.dlms.rules.models.RuleVariableAttribute;
-import org.dataorb.dlms.rules.models.RuleVariableCurrentEvent;
-import org.dataorb.dlms.rules.models.RuleVariableNewestEvent;
-import org.dataorb.dlms.rules.models.RuleVariableNewestStageEvent;
-import org.dataorb.dlms.rules.models.RuleVariablePreviousEvent;
-import org.dataorb.dlms.rules.models.TriggerEnvironment;
-import org.dataorb.dlms.rules.util.MockRuleEnrollment;
+import co.dataorb.java.rules.models.RuleAttributeValue;
+import co.dataorb.java.rules.models.RuleDataValue;
+import co.dataorb.java.rules.models.RuleEnrollment;
+import co.dataorb.java.rules.models.RuleEvent;
+import co.dataorb.java.rules.models.RuleValueType;
+import co.dataorb.java.rules.models.RuleVariable;
+import co.dataorb.java.rules.models.RuleVariableAttribute;
+import co.dataorb.java.rules.models.RuleVariableCurrentEvent;
+import co.dataorb.java.rules.models.RuleVariableNewestEvent;
+import co.dataorb.java.rules.models.RuleVariableNewestStageEvent;
+import co.dataorb.java.rules.models.RuleVariablePreviousEvent;
+import co.dataorb.java.rules.models.TriggerEnvironment;
+import co.dataorb.java.rules.util.MockRuleEnrollment;
 import org.joda.time.LocalDate;
 import org.junit.Before;
 import org.junit.Test;
@@ -30,7 +30,7 @@ import java.util.Locale;
 import java.util.Map;
 
 import static org.assertj.core.api.Java6Assertions.assertThat;
-import static org.dataorb.dlms.rules.RuleVariableValueAssert.assertThatVariable;
+import static co.dataorb.java.rules.RuleVariableValueAssert.assertThatVariable;
 import static org.mockito.Mockito.mock;
 
 @RunWith( JUnit4.class )

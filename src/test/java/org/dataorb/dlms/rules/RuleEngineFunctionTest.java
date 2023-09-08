@@ -1,19 +1,19 @@
-package org.dataorb.dlms.rules;
+package co.dataorb.java.rules;
 
-import org.dataorb.dlms.rules.models.Rule;
-import org.dataorb.dlms.rules.models.RuleAction;
-import org.dataorb.dlms.rules.models.RuleActionDisplayKeyValuePair;
-import org.dataorb.dlms.rules.models.RuleActionDisplayText;
-import org.dataorb.dlms.rules.models.RuleDataValue;
-import org.dataorb.dlms.rules.models.RuleEffect;
-import org.dataorb.dlms.rules.models.RuleEffects;
-import org.dataorb.dlms.rules.models.RuleEnrollment;
-import org.dataorb.dlms.rules.models.RuleEvent;
-import org.dataorb.dlms.rules.models.RuleValueType;
-import org.dataorb.dlms.rules.models.RuleVariable;
-import org.dataorb.dlms.rules.models.RuleVariableCurrentEvent;
-import org.dataorb.dlms.rules.models.RuleVariableNewestEvent;
-import org.dataorb.dlms.rules.models.TriggerEnvironment;
+import co.dataorb.java.rules.models.Rule;
+import co.dataorb.java.rules.models.RuleAction;
+import co.dataorb.java.rules.models.RuleActionDisplayKeyValuePair;
+import co.dataorb.java.rules.models.RuleActionDisplayText;
+import co.dataorb.java.rules.models.RuleDataValue;
+import co.dataorb.java.rules.models.RuleEffect;
+import co.dataorb.java.rules.models.RuleEffects;
+import co.dataorb.java.rules.models.RuleEnrollment;
+import co.dataorb.java.rules.models.RuleEvent;
+import co.dataorb.java.rules.models.RuleValueType;
+import co.dataorb.java.rules.models.RuleVariable;
+import co.dataorb.java.rules.models.RuleVariableCurrentEvent;
+import co.dataorb.java.rules.models.RuleVariableNewestEvent;
+import co.dataorb.java.rules.models.TriggerEnvironment;
 import org.joda.time.LocalDate;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -29,8 +29,8 @@ import java.util.Locale;
 import java.util.Map;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.dataorb.dlms.rules.RuleEngineTestUtils.getRuleEngine;
-import static org.dataorb.dlms.rules.RuleEngineTestUtils.getRuleEngineBuilder;
+import static co.dataorb.java.rules.RuleEngineTestUtils.getRuleEngine;
+import static co.dataorb.java.rules.RuleEngineTestUtils.getRuleEngineBuilder;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 

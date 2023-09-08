@@ -1,4 +1,4 @@
-package org.dataorb.dlms.rules.models;
+package co.dataorb.java.rules.models;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

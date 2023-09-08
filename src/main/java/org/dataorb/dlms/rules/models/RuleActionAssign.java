@@ -1,11 +1,11 @@
-package org.dataorb.dlms.rules.models;
+package co.dataorb.java.rules.models;
 
 import com.google.auto.value.AutoValue;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
-import static org.dataorb.dlms.rules.models.AttributeType.UNKNOWN;
+import static co.dataorb.java.rules.models.AttributeType.UNKNOWN;
 
 @AutoValue
 public abstract class RuleActionAssign

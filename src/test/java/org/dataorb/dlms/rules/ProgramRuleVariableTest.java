@@ -1,15 +1,15 @@
-package org.dataorb.dlms.rules;
+package co.dataorb.java.rules;
 
-import org.dataorb.dlms.rules.models.Rule;
-import org.dataorb.dlms.rules.models.RuleAction;
-import org.dataorb.dlms.rules.models.RuleActionAssign;
-import org.dataorb.dlms.rules.models.RuleAttributeValue;
-import org.dataorb.dlms.rules.models.RuleDataValue;
-import org.dataorb.dlms.rules.models.RuleEffect;
-import org.dataorb.dlms.rules.models.RuleEnrollment;
-import org.dataorb.dlms.rules.models.RuleEvent;
-import org.dataorb.dlms.rules.models.RuleVariable;
-import org.dataorb.dlms.rules.models.TriggerEnvironment;
+import co.dataorb.java.rules.models.Rule;
+import co.dataorb.java.rules.models.RuleAction;
+import co.dataorb.java.rules.models.RuleActionAssign;
+import co.dataorb.java.rules.models.RuleAttributeValue;
+import co.dataorb.java.rules.models.RuleDataValue;
+import co.dataorb.java.rules.models.RuleEffect;
+import co.dataorb.java.rules.models.RuleEnrollment;
+import co.dataorb.java.rules.models.RuleEvent;
+import co.dataorb.java.rules.models.RuleVariable;
+import co.dataorb.java.rules.models.TriggerEnvironment;
 import org.joda.time.LocalDate;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -70,7 +70,7 @@ public class ProgramRuleVariableTest
     public void testCurrentDateProgramVariableIsAssigned()
         throws Exception
     {
-        org.dataorb.dlms.rules.models.Rule rule = getRule( "V{current_date}" );
+        co.dataorb.java.rules.models.Rule rule = getRule( "V{current_date}" );
 
         List<RuleEffect> ruleEffects = callEnrollmentRuleEngine( rule );
 
@@ -81,7 +81,7 @@ public class ProgramRuleVariableTest
     public void testDueDateProgramVariableIsAssigned()
         throws Exception
     {
-        org.dataorb.dlms.rules.models.Rule rule = getRule( "V{due_date}" );
+        co.dataorb.java.rules.models.Rule rule = getRule( "V{due_date}" );
 
         List<RuleEffect> ruleEffects = callEventRuleEngine( rule );
 
@@ -92,7 +92,7 @@ public class ProgramRuleVariableTest
     public void testEnrollmentCountProgramVariableIsAssigned()
         throws Exception
     {
-        org.dataorb.dlms.rules.models.Rule rule = getRule( "V{enrollment_count}" );
+        co.dataorb.java.rules.models.Rule rule = getRule( "V{enrollment_count}" );
 
         List<RuleEffect> ruleEffects = callEnrollmentRuleEngine( rule );
 
@@ -136,7 +136,7 @@ public class ProgramRuleVariableTest
     public void testEnvironmentProgramVariableIsAssigned()
         throws Exception
     {
-        org.dataorb.dlms.rules.models.Rule rule = getRule( "V{environment}" );
+        co.dataorb.java.rules.models.Rule rule = getRule( "V{environment}" );
 
         List<RuleEffect> ruleEffects = callEnrollmentRuleEngine( rule );
 
@@ -147,7 +147,7 @@ public class ProgramRuleVariableTest
     public void testEventCountProgramVariableIsAssigned()
         throws Exception
     {
-        org.dataorb.dlms.rules.models.Rule rule = getRule( "V{event_count}" );
+        co.dataorb.java.rules.models.Rule rule = getRule( "V{event_count}" );
 
         List<RuleEffect> ruleEffects = callEventRuleEngine( rule );
 
@@ -158,7 +158,7 @@ public class ProgramRuleVariableTest
     public void testEventDateProgramVariableIsAssigned()
         throws Exception
     {
-        org.dataorb.dlms.rules.models.Rule rule = getRule( "V{event_date}" );
+        co.dataorb.java.rules.models.Rule rule = getRule( "V{event_date}" );
 
         List<RuleEffect> ruleEffects = callEventRuleEngine( rule );
 
@@ -169,7 +169,7 @@ public class ProgramRuleVariableTest
     public void testEventIdProgramVariableIsAssigned()
         throws Exception
     {
-        org.dataorb.dlms.rules.models.Rule rule = getRule( "V{event_id}" );
+        co.dataorb.java.rules.models.Rule rule = getRule( "V{event_id}" );
 
         List<RuleEffect> ruleEffects = callEventRuleEngine( rule );
 
@@ -180,7 +180,7 @@ public class ProgramRuleVariableTest
     public void testEventStatusProgramVariableIsAssigned()
         throws Exception
     {
-        org.dataorb.dlms.rules.models.Rule rule = getRule( "V{event_status}" );
+        co.dataorb.java.rules.models.Rule rule = getRule( "V{event_status}" );
 
         List<RuleEffect> ruleEffects = callEventRuleEngine( rule );
 
@@ -191,7 +191,7 @@ public class ProgramRuleVariableTest
     public void testIncidentDateProgramVariableIsAssigned()
         throws Exception
     {
-        org.dataorb.dlms.rules.models.Rule rule = getRule( "V{incident_date}" );
+        co.dataorb.java.rules.models.Rule rule = getRule( "V{incident_date}" );
 
         List<RuleEffect> ruleEffects = callEventRuleEngine( rule );
 
@@ -202,7 +202,7 @@ public class ProgramRuleVariableTest
     public void testOrganisationUnitProgramVariableIsAssigned()
         throws Exception
     {
-        org.dataorb.dlms.rules.models.Rule rule = getRule( "V{org_unit}" );
+        co.dataorb.java.rules.models.Rule rule = getRule( "V{org_unit}" );
 
         List<RuleEffect> ruleEffects = callEnrollmentRuleEngine( rule );
 
@@ -213,7 +213,7 @@ public class ProgramRuleVariableTest
     public void testOrganisationUnitCodeProgramVariableIsAssigned()
         throws Exception
     {
-        org.dataorb.dlms.rules.models.Rule rule = getRule( "V{orgunit_code}" );
+        co.dataorb.java.rules.models.Rule rule = getRule( "V{orgunit_code}" );
 
         List<RuleEffect> ruleEffects = callEventRuleEngine( rule );
 
@@ -224,7 +224,7 @@ public class ProgramRuleVariableTest
     public void testProgramNameProgramVariableIsAssigned()
         throws Exception
     {
-        org.dataorb.dlms.rules.models.Rule rule = getRule( "V{program_name}" );
+        co.dataorb.java.rules.models.Rule rule = getRule( "V{program_name}" );
 
         List<RuleEffect> ruleEffects = callEnrollmentRuleEngine( rule );
 
@@ -235,7 +235,7 @@ public class ProgramRuleVariableTest
     public void testProgramStageIdProgramVariableIsAssigned()
         throws Exception
     {
-        org.dataorb.dlms.rules.models.Rule rule = getRule( "V{program_stage_id}" );
+        co.dataorb.java.rules.models.Rule rule = getRule( "V{program_stage_id}" );
 
         List<RuleEffect> ruleEffects = callEventRuleEngine( rule );
 
@@ -246,7 +246,7 @@ public class ProgramRuleVariableTest
     public void testProgramStageNameProgramVariableIsAssigned()
         throws Exception
     {
-        org.dataorb.dlms.rules.models.Rule rule = getRule( "V{program_stage_name}" );
+        co.dataorb.java.rules.models.Rule rule = getRule( "V{program_stage_name}" );
 
         List<RuleEffect> ruleEffects = callEventRuleEngine( rule );
 
@@ -257,17 +257,17 @@ public class ProgramRuleVariableTest
     public void testTEICountProgramVariableIsAssigned()
         throws Exception
     {
-        org.dataorb.dlms.rules.models.Rule rule = getRule( "V{tei_count}" );
+        co.dataorb.java.rules.models.Rule rule = getRule( "V{tei_count}" );
 
         List<RuleEffect> ruleEffects = callEnrollmentRuleEngine( rule );
 
         assertProgramRuleVariableAssignment( ruleEffects, rule, "1" );
     }
 
-    private org.dataorb.dlms.rules.models.Rule getRule( String variable )
+    private co.dataorb.java.rules.models.Rule getRule( String variable )
     {
         RuleAction assignAction = RuleActionAssign.create( null, variable, "#{test_data_element}" );
-        return org.dataorb.dlms.rules.models.Rule
+        return co.dataorb.java.rules.models.Rule
             .create( null, 1, "true", Arrays.asList( assignAction ), "test_program_rule1", "" );
     }
 

@@ -1,4 +1,4 @@
-package org.dataorb.dlms.rules.models;
+package co.dataorb.java.rules.models;
 
 /**
  * This Enum specify the type of tracker object.

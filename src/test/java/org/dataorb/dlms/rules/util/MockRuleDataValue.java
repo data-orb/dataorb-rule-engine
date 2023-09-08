@@ -1,6 +1,6 @@
-package org.dataorb.dlms.rules.util;
+package co.dataorb.java.rules.util;
 
-import org.dataorb.dlms.rules.models.RuleDataValue;
+import co.dataorb.java.rules.models.RuleDataValue;
 
 import javax.annotation.Nonnull;
 import java.util.Date;

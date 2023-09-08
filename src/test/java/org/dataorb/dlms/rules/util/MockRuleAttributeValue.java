@@ -1,6 +1,6 @@
-package org.dataorb.dlms.rules.util;
+package co.dataorb.java.rules.util;
 
-import org.dataorb.dlms.rules.models.RuleAttributeValue;
+import co.dataorb.java.rules.models.RuleAttributeValue;
 
 import javax.annotation.Nonnull;
 

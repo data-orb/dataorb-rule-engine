@@ -1,4 +1,4 @@
-package org.dataorb.dlms.rules;
+package co.dataorb.java.rules;
 
 public enum RuleEngineIntent
 {

@@ -1,17 +1,17 @@
-package org.dataorb.dlms.rules;
+package co.dataorb.java.rules;
 
-import org.dataorb.dlms.lib.expression.Expression;
-import org.dataorb.dlms.lib.expression.spi.IllegalExpressionException;
-import org.dataorb.dlms.lib.expression.spi.ParseException;
-import org.dataorb.dlms.lib.expression.spi.ValueType;
-import org.dataorb.dlms.rules.models.Rule;
-import org.dataorb.dlms.rules.models.RuleEffect;
-import org.dataorb.dlms.rules.models.RuleEffects;
-import org.dataorb.dlms.rules.models.RuleEngineValidationException;
-import org.dataorb.dlms.rules.models.RuleEnrollment;
-import org.dataorb.dlms.rules.models.RuleEvent;
-import org.dataorb.dlms.rules.models.RuleValidationResult;
-import org.dataorb.dlms.rules.models.TriggerEnvironment;
+import org.hisp.dhis.lib.expression.Expression;
+import org.hisp.dhis.lib.expression.spi.IllegalExpressionException;
+import org.hisp.dhis.lib.expression.spi.ParseException;
+import org.hisp.dhis.lib.expression.spi.ValueType;
+import co.dataorb.java.rules.models.Rule;
+import co.dataorb.java.rules.models.RuleEffect;
+import co.dataorb.java.rules.models.RuleEffects;
+import co.dataorb.java.rules.models.RuleEngineValidationException;
+import co.dataorb.java.rules.models.RuleEnrollment;
+import co.dataorb.java.rules.models.RuleEvent;
+import co.dataorb.java.rules.models.RuleValidationResult;
+import co.dataorb.java.rules.models.TriggerEnvironment;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

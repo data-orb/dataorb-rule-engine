@@ -1,10 +1,10 @@
-package org.dataorb.dlms.rules;
+package co.dataorb.java.rules;
 
-import org.dataorb.dlms.rules.models.Rule;
-import org.dataorb.dlms.rules.models.RuleEffect;
-import org.dataorb.dlms.rules.models.RuleEnrollment;
-import org.dataorb.dlms.rules.models.RuleEvent;
-import org.dataorb.dlms.rules.models.TrackerObjectType;
+import co.dataorb.java.rules.models.Rule;
+import co.dataorb.java.rules.models.RuleEffect;
+import co.dataorb.java.rules.models.RuleEnrollment;
+import co.dataorb.java.rules.models.RuleEvent;
+import co.dataorb.java.rules.models.TrackerObjectType;
 
 import javax.annotation.Nonnull;
 import java.util.HashMap;

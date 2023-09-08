@@ -1,11 +1,11 @@
-package org.dataorb.dlms.rules;
+package co.dataorb.java.rules;
 
-import org.dataorb.dlms.lib.expression.spi.ParseException;
-import org.dataorb.dlms.rules.models.Rule;
-import org.dataorb.dlms.rules.models.RuleAction;
-import org.dataorb.dlms.rules.models.RuleActionDisplayKeyValuePair;
-import org.dataorb.dlms.rules.models.RuleValidationResult;
-import org.dataorb.dlms.rules.models.TriggerEnvironment;
+import org.hisp.dhis.lib.expression.spi.ParseException;
+import co.dataorb.java.rules.models.Rule;
+import co.dataorb.java.rules.models.RuleAction;
+import co.dataorb.java.rules.models.RuleActionDisplayKeyValuePair;
+import co.dataorb.java.rules.models.RuleValidationResult;
+import co.dataorb.java.rules.models.TriggerEnvironment;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;

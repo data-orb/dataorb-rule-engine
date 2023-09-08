@@ -1,14 +1,14 @@
-package org.dataorb.dlms.rules;
+package co.dataorb.java.rules;
 
-import org.dataorb.dlms.rules.models.*;
-import org.dataorb.dlms.rules.utils.RuleEngineUtils;
+import co.dataorb.java.rules.models.*;
+import co.dataorb.java.rules.utils.RuleEngineUtils;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-import static org.dataorb.dlms.rules.RuleVariableValue.create;
+import static co.dataorb.java.rules.RuleVariableValue.create;
 
 @SuppressWarnings( "PMD.GodClass" )
 public final class RuleVariableValueMapBuilder

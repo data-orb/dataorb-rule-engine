@@ -1,6 +1,6 @@
-package org.dataorb.dlms.rules;
+package co.dataorb.java.rules;
 
-import org.dataorb.dlms.lib.expression.spi.ValueType;
+import org.hisp.dhis.lib.expression.spi.ValueType;
 
 public enum ItemValueType
 {

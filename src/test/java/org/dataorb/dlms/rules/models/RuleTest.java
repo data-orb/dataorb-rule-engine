@@ -1,6 +1,6 @@
-package org.dataorb.dlms.rules.models;
+package co.dataorb.java.rules.models;
 
-import org.dataorb.dlms.rules.util.MockRuleAction;
+import co.dataorb.java.rules.util.MockRuleAction;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;

@@ -1,9 +1,9 @@
-package org.dataorb.dlms.rules.models;
+package co.dataorb.java.rules.models;
 
 import com.google.auto.value.AutoValue;
-import org.dataorb.dlms.rules.Option;
-import org.dataorb.dlms.rules.RuleVariableValue;
-import org.dataorb.dlms.rules.RuleVariableValueMapBuilder;
+import co.dataorb.java.rules.Option;
+import co.dataorb.java.rules.RuleVariableValue;
+import co.dataorb.java.rules.RuleVariableValueMapBuilder;
 
 import javax.annotation.Nonnull;
 import java.util.Arrays;
@@ -11,7 +11,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static org.dataorb.dlms.rules.Utils.getLastUpdateDate;
+import static co.dataorb.java.rules.Utils.getLastUpdateDate;
 
 @AutoValue
 public abstract class RuleVariableCurrentEvent

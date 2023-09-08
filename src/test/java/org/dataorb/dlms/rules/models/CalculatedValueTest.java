@@ -1,7 +1,7 @@
-package org.dataorb.dlms.rules.models;
+package co.dataorb.java.rules.models;
 
-import org.dataorb.dlms.rules.RuleEngine;
-import org.dataorb.dlms.rules.RuleEngineContext;
+import co.dataorb.java.rules.RuleEngine;
+import co.dataorb.java.rules.RuleEngineContext;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
@@ -59,11 +59,11 @@ public class CalculatedValueTest
         throws Exception
     {
         RuleAction assignAction = RuleActionAssign.create( "#{test_calculated_value}", "2+2", null );
-        org.dataorb.dlms.rules.models.Rule rule = org.dataorb.dlms.rules.models.Rule
+        co.dataorb.java.rules.models.Rule rule = co.dataorb.java.rules.models.Rule
             .create( null, 1, "true", Arrays.asList( assignAction ), "test_program_rule1", "" );
 
         RuleAction sendMessageAction = RuleActionSendMessage.create( "test_notification", "4" );
-        org.dataorb.dlms.rules.models.Rule rule2 = org.dataorb.dlms.rules.models.Rule
+        co.dataorb.java.rules.models.Rule rule2 = co.dataorb.java.rules.models.Rule
             .create( null, 4, "#{test_calculated_value}==4", Arrays.asList( sendMessageAction ), "test_program_rule2",
                 "" );
 
@@ -98,15 +98,15 @@ public class CalculatedValueTest
         assertThat( ruleEffects.get( 0 ).ruleAction() ).isEqualTo( sendMessageAction );
     }
 
-    private List<org.dataorb.dlms.rules.models.Rule> createRules( int i )
+    private List<co.dataorb.java.rules.models.Rule> createRules( int i )
     {
-        List<org.dataorb.dlms.rules.models.Rule> rules = new ArrayList<>();
+        List<co.dataorb.java.rules.models.Rule> rules = new ArrayList<>();
         RuleAction assignAction = RuleActionAssign.create( "#{test_calculated_value}", "2+2", null );
-        org.dataorb.dlms.rules.models.Rule rule = org.dataorb.dlms.rules.models.Rule
+        co.dataorb.java.rules.models.Rule rule = co.dataorb.java.rules.models.Rule
             .create( null, 1, "true", Arrays.asList( assignAction ), "test_program_rule1", "" );
 
         RuleAction sendMessageAction = RuleActionSendMessage.create( "test_notification", "4" );
-        org.dataorb.dlms.rules.models.Rule rule2 = org.dataorb.dlms.rules.models.Rule
+        co.dataorb.java.rules.models.Rule rule2 = co.dataorb.java.rules.models.Rule
             .create( null, 4, "#{test_calculated_value}==4", Arrays.asList( sendMessageAction ), "test_program_rule2",
                 "" );
         for ( int j = 0; j < i; j++ )
@@ -122,11 +122,11 @@ public class CalculatedValueTest
         throws Exception
     {
         RuleAction assignAction = RuleActionAssign.create( "#{test_calculated_value}", "2+2", null );
-        org.dataorb.dlms.rules.models.Rule rule = org.dataorb.dlms.rules.models.Rule
+        co.dataorb.java.rules.models.Rule rule = co.dataorb.java.rules.models.Rule
             .create( null, 1, "true", Arrays.asList( assignAction ), "test_program_rule1", "" );
 
         RuleAction sendMessageAction = RuleActionSendMessage.create( "test_notification", "4.0" );
-        org.dataorb.dlms.rules.models.Rule rule2 = org.dataorb.dlms.rules.models.Rule
+        co.dataorb.java.rules.models.Rule rule2 = co.dataorb.java.rules.models.Rule
             .create( null, 4, "#{test_calculated_value}==4.0", Arrays.asList( sendMessageAction ),
                 "test_program_rule2", "" );
 
@@ -165,7 +165,7 @@ public class CalculatedValueTest
 
     }
 
-    private RuleEngine.Builder getRuleEngine( List<org.dataorb.dlms.rules.models.Rule> rules )
+    private RuleEngine.Builder getRuleEngine( List<co.dataorb.java.rules.models.Rule> rules )
     {
         RuleVariable ruleVariable = RuleVariableCalculatedValue
             .create( "test_calculated_value", "", RuleValueType.TEXT, true, new ArrayList<>());

@@ -1,11 +1,11 @@
-package org.dataorb.dlms.rules.util;
+package co.dataorb.java.rules.util;
 
-import org.dataorb.dlms.rules.Option;
-import org.dataorb.dlms.rules.RuleVariableValue;
-import org.dataorb.dlms.rules.RuleVariableValueMapBuilder;
-import org.dataorb.dlms.rules.models.RuleAttributeValue;
-import org.dataorb.dlms.rules.models.RuleDataValue;
-import org.dataorb.dlms.rules.models.RuleVariable;
+import co.dataorb.java.rules.Option;
+import co.dataorb.java.rules.RuleVariableValue;
+import co.dataorb.java.rules.RuleVariableValueMapBuilder;
+import co.dataorb.java.rules.models.RuleAttributeValue;
+import co.dataorb.java.rules.models.RuleDataValue;
+import co.dataorb.java.rules.models.RuleVariable;
 
 import javax.annotation.Nonnull;
 import java.util.List;

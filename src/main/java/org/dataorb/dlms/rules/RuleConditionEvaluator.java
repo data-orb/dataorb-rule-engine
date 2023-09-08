@@ -1,10 +1,10 @@
-package org.dataorb.dlms.rules;
+package co.dataorb.java.rules;
 
 import org.apache.commons.lang3.StringUtils;
-import org.dataorb.dlms.lib.expression.Expression;
-import org.dataorb.dlms.lib.expression.spi.ExpressionData;
-import org.dataorb.dlms.lib.expression.spi.IllegalExpressionException;
-import org.dataorb.dlms.rules.models.*;
+import co.dataorb.java.lib.expression.Expression;
+import co.dataorb.java.lib.expression.spi.ExpressionData;
+import co.dataorb.java.lib.expression.spi.IllegalExpressionException;
+import co.dataorb.java.rules.models.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

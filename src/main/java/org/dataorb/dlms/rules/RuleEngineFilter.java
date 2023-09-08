@@ -1,12 +1,12 @@
-package org.dataorb.dlms.rules;
+package co.dataorb.java.rules;
 
 import org.apache.commons.lang3.StringUtils;
-import org.dataorb.dlms.rules.models.AttributeType;
-import org.dataorb.dlms.rules.models.Rule;
-import org.dataorb.dlms.rules.models.RuleAction;
-import org.dataorb.dlms.rules.models.RuleActionAttribute;
-import org.dataorb.dlms.rules.models.RuleEnrollment;
-import org.dataorb.dlms.rules.models.RuleEvent;
+import co.dataorb.java.rules.models.AttributeType;
+import co.dataorb.java.rules.models.Rule;
+import co.dataorb.java.rules.models.RuleAction;
+import co.dataorb.java.rules.models.RuleActionAttribute;
+import co.dataorb.java.rules.models.RuleEnrollment;
+import co.dataorb.java.rules.models.RuleEvent;
 
 import java.util.ArrayList;
 import java.util.List;

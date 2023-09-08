@@ -1,6 +1,6 @@
-package org.dataorb.dlms.rules.utils;
+package co.dataorb.java.rules.utils;
 
-import org.dataorb.dlms.rules.ItemValueType;
+import co.dataorb.java.rules.ItemValueType;
 
 import java.util.Map;
 

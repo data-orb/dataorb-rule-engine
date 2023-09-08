@@ -1,17 +1,17 @@
-package org.dataorb.dlms.rules;
+package co.dataorb.java.rules;
 
-import org.dataorb.dlms.rules.models.Rule;
-import org.dataorb.dlms.rules.models.RuleAction;
-import org.dataorb.dlms.rules.models.RuleActionAssign;
-import org.dataorb.dlms.rules.models.RuleActionShowError;
-import org.dataorb.dlms.rules.models.RuleAttributeValue;
-import org.dataorb.dlms.rules.models.RuleDataValue;
-import org.dataorb.dlms.rules.models.RuleEffect;
-import org.dataorb.dlms.rules.models.RuleEnrollment;
-import org.dataorb.dlms.rules.models.RuleEvent;
-import org.dataorb.dlms.rules.models.TriggerEnvironment;
-import org.dataorb.dlms.rules.util.MockRule;
-import org.dataorb.dlms.rules.util.MockRuleVariable;
+import co.dataorb.java.rules.models.Rule;
+import co.dataorb.java.rules.models.RuleAction;
+import co.dataorb.java.rules.models.RuleActionAssign;
+import co.dataorb.java.rules.models.RuleActionShowError;
+import co.dataorb.java.rules.models.RuleAttributeValue;
+import co.dataorb.java.rules.models.RuleDataValue;
+import co.dataorb.java.rules.models.RuleEffect;
+import co.dataorb.java.rules.models.RuleEnrollment;
+import co.dataorb.java.rules.models.RuleEvent;
+import co.dataorb.java.rules.models.TriggerEnvironment;
+import co.dataorb.java.rules.util.MockRule;
+import co.dataorb.java.rules.util.MockRuleVariable;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
@@ -47,7 +47,7 @@ public class ConstantsValueTest
         throws Exception
     {
         RuleAction assignAction = RuleActionAssign.create( null, "C{A1234567890}", "#{test_attribute}" );
-        org.dataorb.dlms.rules.models.Rule rule = org.dataorb.dlms.rules.models.Rule
+        co.dataorb.java.rules.models.Rule rule = co.dataorb.java.rules.models.Rule
             .create( null, 1, "true", Arrays.asList( assignAction ), "test_program_rule1", "" );
 
         Map<String, String> constantsValueMap = new HashMap<>();
@@ -80,9 +80,9 @@ public class ConstantsValueTest
     {
         RuleAction assignAction = RuleActionAssign.create( null, "4", "test_attribute" );
         RuleAction action = RuleActionShowError.create( null, "#{test_attribute}", "" );
-        org.dataorb.dlms.rules.models.Rule rule = org.dataorb.dlms.rules.models.Rule
+        co.dataorb.java.rules.models.Rule rule = co.dataorb.java.rules.models.Rule
             .create( null, 1, "true", Arrays.asList( assignAction ), "test_program_rule1", "" );
-        org.dataorb.dlms.rules.models.Rule rule2 = org.dataorb.dlms.rules.models.Rule
+        co.dataorb.java.rules.models.Rule rule2 = co.dataorb.java.rules.models.Rule
             .create( null, 1, "#{test_attribute} > 3", Arrays.asList( action ), "test_program_rule2", "" );
 
         RuleEngine.Builder ruleEngineBuilder = getRuleEngine( Arrays.asList( rule, rule2 ),
@@ -115,9 +115,9 @@ public class ConstantsValueTest
     {
         RuleAction assignAction = RuleActionAssign.create( "#{test_attribute}", "4", null );
         RuleAction action = RuleActionShowError.create( null, "#{test_attribute}", "" );
-        org.dataorb.dlms.rules.models.Rule rule = org.dataorb.dlms.rules.models.Rule
+        co.dataorb.java.rules.models.Rule rule = co.dataorb.java.rules.models.Rule
             .create( null, 1, "true", Arrays.asList( assignAction ), "test_program_rule1", "" );
-        org.dataorb.dlms.rules.models.Rule rule2 = org.dataorb.dlms.rules.models.Rule
+        co.dataorb.java.rules.models.Rule rule2 = co.dataorb.java.rules.models.Rule
             .create( null, 1, "#{test_attribute} > 3", Arrays.asList( action ), "test_program_rule2", "" );
 
         RuleEngine.Builder ruleEngineBuilder = getRuleEngine( Arrays.asList( rule, rule2 ),
@@ -147,7 +147,7 @@ public class ConstantsValueTest
         throws Exception
     {
         RuleAction assignAction = RuleActionAssign.create( null, "C{A1234567890}", "#{test_data_element}" );
-        org.dataorb.dlms.rules.models.Rule rule = org.dataorb.dlms.rules.models.Rule
+        co.dataorb.java.rules.models.Rule rule = co.dataorb.java.rules.models.Rule
             .create( null, 1, "true", Arrays.asList( assignAction ), "test_program_rule1", "" );
 
         Map<String, String> constantsValueMap = new HashMap<>();
